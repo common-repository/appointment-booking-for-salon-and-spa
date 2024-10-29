@@ -1,0 +1,109 @@
+input[type=radio].blknt_colorpicker
+{
+  width: 32px;
+  height: 32px;
+  border: none;
+}
+
+
+input[type=radio].blknt_colorpicker:checked:before
+{
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  margin: 0px;
+  box-shadow: inset 0px 0px 0px 5px rgba(0, 0, 0, 0.34);
+  background: none;
+}
+
+input[type=radio].blknt_colorpicker--red
+{
+ background: #c44946;
+}
+
+input[type=radio].blknt_colorpicker--blue
+{
+ background: #0c85ff;
+}
+
+input[type=radio].blknt_colorpicker--green
+{
+ background: #47c56a;
+}
+
+input[type=radio].blknt_colorpicker--orange
+{
+ background: #e57938;
+}
+
+input[type=radio].blknt_colorpicker--pink
+{
+ background: #e54b9b;
+}
+
+input[type=radio].blknt_colorpicker--purple
+{
+ background: #9042ff;
+}
+
+input[type=radio].blknt_colorpicker--black
+{
+ background: #151515;
+}
+
+input[type=radio].blknt_colorpicker.blknt_colorpicker--black:checked:before
+{
+  box-shadow: inset 0px 0px 0px 5px rgba(255, 255, 255, 0.3);
+}
+
+input[type=radio].blknt_colorpicker--white
+{
+ background: #ffff;
+}
+
+.blknt_pospicker
+{
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.blknt_pospicker > input[type=radio]
+{
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 5px;
+}
+
+.blknt_pospicker > input[type=radio]:before
+{
+  display: inline-block;
+  font-family: dashicons;
+  text-indent: 0;
+  margin: 0;
+  font-size: 32px;
+  height: 32px;
+  width: 32px;
+  line-height: 1;
+  background: none;
+  margin: 8px;
+}
+
+.blknt_pospicker--left > input[type=radio]:before
+{
+  content: "\f135";
+}
+
+.blknt_pospicker--right > input[type=radio]:before
+{
+  content: "\f136";
+}
+
+
+.blknt_pospicker > input[type=radio]:checked
+{
+  color: #0085ba;
+  box-shadow: inset 0px 0px 0px 2px #0085ba
+}

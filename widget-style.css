@@ -1,0 +1,292 @@
+#bloknotapp-widget-container
+{
+  width: 400px;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  border:none;
+  background-color: #eeeeee;
+  z-index: 1000002;
+}
+
+.bloknotapp-widget-container--guide
+{
+  padding: 20px;
+  overflow-x: hidden;
+  background-color: #ffffff !important;
+  -webkit-font-smoothing: antialiased;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.bloknotapp-widget-container--guide>.img-container
+{
+  text-align: center;
+}
+
+.bloknotapp-widget-container--guide>.img-container>img
+{
+  max-width: 230px;
+}
+
+.bloknotapp-widget-container--guide>h3
+{
+  text-align: center;
+}
+
+.bloknotapp-widget-container--guide>ul
+{
+  list-style: none;
+}
+
+.bloknotapp-widget-container--guide>ul>li
+{
+  margin-bottom: 16px;
+}
+
+
+
+#bloknotapp-widget-iframe
+{
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+/* Widget positions */
+.blknt_widget--right
+{
+  right: -450px;
+  box-shadow: -10px 0px 60px 20px rgba(0, 0, 0, 0.14);
+}
+
+.blknt_widget--right > #close-bloknot-widget
+{
+  left: -50px;
+}
+
+.blknt_widget--right.hide
+{
+  transform: translateX(450px) !important;
+  transition: 0.7s ease-in-out;
+}
+
+.blknt_widget--right.show
+{
+  transform: translateX(-450px) !important;
+  transition: 0.7s ease-in-out;
+}
+
+.blknt_widget--left
+{
+  left:-450px;
+  box-shadow: 10px 0px 60px 20px rgba(0, 0, 0, 0.14);
+}
+
+.blknt_widget--left > #close-bloknot-widget
+{
+  right: -50px;
+}
+
+.blknt_widget--left.hide
+{
+  transform: translateX(-450px) !important;
+  transition: 0.7s ease-in-out;
+}
+
+.blknt_widget--left.show
+{
+  transform: translateX(450px) !important;
+  transition: 0.7s ease-in-out;
+}
+
+#bloknot-widget-backdrop
+{
+  background-color: rgba(0, 0, 0, 0.18);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left: 0;
+  z-index: 1000001;
+}
+
+#bloknot-widget-backdrop.hide
+{
+  visibility: hidden;
+}
+
+#bloknot-widget-backdrop.show
+{
+  visibility: visible;
+}
+
+#close-bloknot-widget
+{
+  position: absolute;
+  top: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 100px;
+  background-color: white;
+  background-image: url("https://bloknotapp.com/promo/widget/close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  cursor: pointer;
+}
+
+a#bloknot-widget-button
+{
+  position: fixed;
+  box-sizing: border-box;
+  height:100px;
+  width:100px;
+  border-radius: 100px;
+  -webkit-animation: 4s pulse infinite;
+  border: 8px solid rgba(255, 255, 255, 0.14);
+  z-index: 100000;
+  cursor: pointer;
+}
+
+a#bloknot-widget-button:hover
+{
+  animation-play-state: paused;
+}
+
+a#bloknot-widget-button > span
+{
+  -webkit-font-smoothing: antialiased;
+  font-family: Arial,Helvetica,sans-serif;
+  line-height: 1 !important;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  height: 35px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+
+
+@-webkit-keyframes pulse {
+  0%
+  {
+    transform:scaleX(1)
+  }
+  50%
+  {
+    transform:scale3d(1.15,1.15,1.15)
+  }
+  to
+  {
+    transform:scaleX(1)
+  }
+}
+
+
+/* Button positions */
+.bloknotbtn--right-top
+{
+  right: 30px;
+  top: 30px;
+}
+
+.bloknotbtn--right-bottom
+{
+  right: 30px;
+  bottom: 30px;
+}
+
+.bloknotbtn--left-top
+{
+  left: 30px;
+  top: 30px;
+}
+
+.bloknotbtn--left-bottom
+{
+  left: 30px;
+  bottom: 30px;
+}
+
+
+/* Button colors */
+.bloknotbtn--blue
+{
+  background-color: #0c85ff;
+}
+
+.bloknotbtn--blue:hover
+{
+  background-color: #0c85ff;
+}
+
+.bloknotbtn--green
+{
+  background-color: #47c56a;
+}
+
+.bloknotbtn--orange
+{
+  background-color: #e57938;
+}
+
+.bloknotbtn--red
+{
+  background-color: #c44946;
+}
+
+.bloknotbtn--pink
+{
+  background-color: #e54b9b;
+}
+
+.bloknotbtn--purple
+{
+  background-color: #9042ff;
+}
+
+.bloknotbtn--black
+{
+  background-color: #151515;
+}
+
+.bloknotbtn--white
+{
+  background-color: #ffff;
+  border: 8px solid rgba(193, 193, 193, 0.14) !important;
+}
+
+.bloknotbtn--white > span
+{
+  color:#151515 !important;
+}
+
+
+
+@media (max-width: 767px)
+{
+  #bloknotapp-widget-container
+  {
+    width: 100%;
+  }
+
+  #close-bloknot-widget
+  {
+    right: 10px !important;
+    left: unset !important;
+  }
+
+  a#bloknot-widget-button
+  {
+    height:80px;
+    width:80px;
+  }
+
+  a#bloknot-widget-button > span
+  {
+    font-size: 12px;
+    height: 25px;
+  }
+}
